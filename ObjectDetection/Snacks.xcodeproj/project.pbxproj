@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6363603127771907006B429F /* SnackDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6363603027771907006B429F /* SnackDetector.mlmodel */; };
 		7124694A273994F3000929DA /* BoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71246949273994F3000929DA /* BoundingBoxView.swift */; };
 		7B0EB8AA2052A38A00EB567E /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0EB8A92052A38A00EB567E /* VideoCapture.swift */; };
 		7B11BA832048333700D790AA /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B11BA822048333700D790AA /* CGImagePropertyOrientation.swift */; };
@@ -18,7 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		71246949273994F3000929DA /* BoundingBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBoxView.swift; path = ../../../../../../iOS2021/Assignments/iw05555/SnackLocalization/SnackLocalization/BoundingBoxView.swift; sourceTree = "<group>"; };
+		6363603027771907006B429F /* SnackDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SnackDetector.mlmodel; sourceTree = "<group>"; };
+		71246949273994F3000929DA /* BoundingBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBoxView.swift; sourceTree = "<group>"; };
 		7B0EB8A92052A38A00EB567E /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		7B11BA822048333700D790AA /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		7BF6C65C204818EC00606217 /* ObjectDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,7 @@
 		7BF6C653204818EC00606217 = {
 			isa = PBXGroup;
 			children = (
+				6363603027771907006B429F /* SnackDetector.mlmodel */,
 				7BF6C65E204818EC00606217 /* Snacks */,
 				7BF6C65D204818EC00606217 /* Products */,
 			);
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BF6C662204818EC00606217 /* ViewController.swift in Sources */,
+				6363603127771907006B429F /* SnackDetector.mlmodel in Sources */,
 				7124694A273994F3000929DA /* BoundingBoxView.swift in Sources */,
 				7B0EB8AA2052A38A00EB567E /* VideoCapture.swift in Sources */,
 				7BF6C660204818EC00606217 /* AppDelegate.swift in Sources */,
@@ -295,14 +299,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E98L3B5R56;
+				DEVELOPMENT_TEAM = NVY7284PUL;
 				INFOPLIST_FILE = Snacks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.ObjectDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaaabang.ObjectDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -316,14 +320,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E98L3B5R56;
+				DEVELOPMENT_TEAM = NVY7284PUL;
 				INFOPLIST_FILE = Snacks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.ObjectDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaaabang.ObjectDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

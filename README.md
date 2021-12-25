@@ -1,4 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6405457&assignment_repo_type=AssignmentRepo)
 # iw05
 iOS assignment 5: Object Detection App.
 
@@ -15,3 +14,30 @@ iOS assignment 5: Object Detection App.
 
 1. 可调iouThreshold和confidenceThreshold
 2. 熟悉YOLOv X模型
+
+操作流程简介
+
+0. 安装python（mac环境不需要，自带了）
+
+1. 安装conda（可以通过pip install）
+
+2. 安装conda环境：turienv.yaml是conda环境需求文件，通过一下命令安装环境
+```python
+conda env create -f turienv.yaml
+```
+3. 安装jupyter notebook
+  
+  通过conda安装
+  ```python
+  conda install -c conda-forge notebook
+  ```
+  通过pip安装
+  ```python
+  pip install notebook
+  ```
+  安装好后，在终端运行
+  ```terminal
+  jupyter notebook
+  ```
+  
+4. 执行tinyYOLO.ipynb

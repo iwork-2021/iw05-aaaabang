@@ -180,11 +180,44 @@ class ViewController: UIViewController {
   }
 
   func processObservations(for request: VNRequest, error: Error?) {
-    //call show function
+      //call show function
+      DispatchQueue.main.async{
+          if let results = request.results as? [VNRecognizedObjectObservation]{
+              if results.isEmpty {
+                  print("nothing found!")
+              } else {
+                  self.show(predictions: results)
+              }
+          }else if let error = error{
+              print(error.localizedDescription)
+          }else{
+              print("???")
+          }
+      }
   }
 
   func show(predictions: [VNRecognizedObjectObservation]) {
    //process the results, call show function in BoundingBoxView
+      for box in 0..<boundingBoxViews.count{
+          if box >= predictions.count{//
+              boundingBoxViews[box].hide()
+              continue
+          }
+          
+          let prediction = predictions[box]
+          let width = view.bounds.width
+          let height = width * 600/400
+          let offsetY = (view.bounds.height - height) / 2
+          let scale = CGAffineTransform.identity.scaledBy(x: width, y: height)
+          let transform = CGAffineTransform(scaleX: 1, y: -1).translatedBy(x: 0, y: -height - offsetY)
+          let rect = prediction.boundingBox.applying(scale).applying(transform)
+          
+          let label: String = prediction.labels[0].identifier 
+          let color = colors[prediction.labels[0].identifier]!
+          boundingBoxViews[box].show(frame: rect, label: label, color: color)
+      }
+
+  }
 }
 
 extension ViewController: VideoCaptureDelegate {
